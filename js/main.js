@@ -9,7 +9,10 @@ let hotel = 250;
 let museum = 120;
 let total = (bilet + hotel) * USD_TO_UZS + museum * EURO_TO_UZS; 
 
-if (userBudjet >= total) { 
+if (isNaN(userBudjet)){
+    alert("Iltimos raqam kiriting ! ")
+
+} else if (userBudjet >= total) { 
     elResult.textContent = "Alisher aka bemalol sayohat qilib kelishingiz mumkin."
 
 } else if (userBudjet < 0 || userBudjet == 0){
